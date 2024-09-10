@@ -72,10 +72,62 @@
         max-width: 100%;
       }
     }
+    @keyframes work {
+      from{
+        opacity: 0;
+        scale: 0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .blockslider{
+      animation: work 5s linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    
+    #loader{
+      width: 100%;
+      height: 600px;
+      /* margin-top: -200px; */
+    }
+    @media (max-width: 768px) {
+
+/* On small screens, stack video and content vertically */
+.video-content-section {
+  flex-direction: column;
+  text-align: center;
+}
+#loader{margin-top: 90px;
+     width: 100%;
+      height: 600px;
+      /* margin-top: -200px; */
+    }
+
+.video-container video {
+  max-width: 100%;
+}
+}
+
+#view{
+      display: none;
+    }
+
   </style>
 </head>
 
 <body style="background-color:black">
+<div  id="loader">
+  <video id="loader" muted loop autoplay src="videos/loading.mp4">
+      
+  </video>
+</div>
+
+<div id="view">
+
 
   <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
     <div class="container">
@@ -111,7 +163,7 @@
 
 
 
-  <section class="container my-5">
+  <section class="container my-5 blockslider">
     <div class="row video-content-section d-flex align-items-center">
       <!-- Left side: Video -->
       <div class="col-lg-6 col-md-12 video-container">
@@ -136,6 +188,9 @@
   </section>
 
 
+</div>
+
+
 
   <!-- END nav -->
   <script src="js/jquery.min.js"></script>
@@ -143,6 +198,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script>
+    
+    window.onload = function() {
+      
+    }
+
     var TxtType = function (el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
@@ -185,6 +245,8 @@
     };
 
     window.onload = function () {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("view").style.display = "block";
       var elements = document.getElementsByClassName('typewrite');
       for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
