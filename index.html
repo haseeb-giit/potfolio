@@ -55,7 +55,9 @@
       font-style: normal;
       -webkit-animation: name 1s infinite alternate;
       /* Added for better browser compatibility */
+      animation: name 1s infinite alternate;
       animation: glow 1s infinite alternate;
+
     }
 
     .logocontent {
@@ -83,15 +85,6 @@
       }
     }
 
-    @keyframes name {
-      0% {
-        color: blue;
-      }
-
-      100% {
-        color: red;
-      }
-    }
 
     .video-container video {
       width: 100%;
@@ -144,6 +137,38 @@
 
     @media (max-width: 768px) {
 
+      .logoname {
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      -webkit-animation: name 1s infinite alternate;
+      /* Added for better browser compatibility */
+      animation: name 1s infinite alternate;
+    }
+    
+    .logocontent {
+      animation: blu 1s infinite alternate;
+    }
+
+    @-webkit-keyframes name {
+      0% {
+        color: blue;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+    @-webkit-keyframes blu {
+      0% {
+        color: red;
+      }
+
+      100% {
+        color: blue;
+      }
+    }
+    
       /* On small screens, stack video and content vertically */
       .video-content-section {
         flex-direction: column;
@@ -217,7 +242,7 @@
         <!-- Left side: Video -->
         <div class="col-lg-6 col-md-12 video-container">
           <video muted autoplay loop>
-            <source src="videos/kjjj.mp4" type="video/mp4">
+            <source src="videos/kj.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -234,7 +259,7 @@
               </a>
           </h2>
           <br>
-          <button type="button" class="btn btn-light" data-mdb-ripple-init data-mdb-ripple-color="dark">Download CV</button>
+          <button type="button" class="btn btn-light" data-mdb-ripple-init data-mdb-ripple-color="dark"><a href="cv.pdf">Download CV</a></button>
 
         </b>
         </div>
@@ -247,7 +272,7 @@
         <!-- Left side: Video -->
         <div class="col-lg-6 col-md-12 video-container">
           <video muted autoplay loop>
-            <source src="videos/kjjj.mp4" type="video/mp4">
+            <source src="videos/kj.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -325,7 +350,7 @@
       document.getElementById("loader").style.display = "none";
       document.getElementById("view").style.display = "block";
       document.getElementById("html").classList.remove("bod");
-      document.getElementById("body").classList.remove("bod");
+      //document.getElementById("body").classList.remove("bod");
       var elements = document.getElementsByClassName('typewrite');
       for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
