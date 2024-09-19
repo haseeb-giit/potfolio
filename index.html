@@ -132,14 +132,16 @@
     }
 
     .border_animation {
-      border: 3px solid red;
+      border: none;
       border-radius: 7px;
       animation: mymove 5s infinite;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+      0 3px 5px rgba(0, 0, 0, 0.1);
     }
 
     @keyframes mymove {
       50% {
-        border-color: blue;
+        border-color: rgb(120, 120, 121);
       }
     }
 
@@ -235,6 +237,162 @@
     #view {
       display: none;
     }
+
+    /* Body for the black background */
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Download button container */
+.download-button-container {
+    text-align: center;
+    position: relative;
+}
+
+/* Download button styling */
+.download-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.download-button:active .icon {
+    transform: translateY(5px);
+}
+
+/* Success state */
+.download-button.success {
+    background-color: black;
+    color: white;
+}
+
+.download-button.success #download-text {
+    content: "Downloaded";
+    animation: fade-in-out 0.5s forwards;
+}
+
+.download-button.success #download-icon {
+    content: "✔";
+    transform: rotate(0deg);
+    animation: rotate-check 0.5s forwards;
+}
+
+/* Fade-in-out effect for download text */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Rotation effect for checkmark */
+@keyframes rotate-check {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+.hov{
+  border: 2px solid white;
+  color: white;
+}
+.hov:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+        .contact-section {
+            background-color: black;
+            padding: 60px 0;
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info h4 {
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            color: #00c1fc;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .social-media a:hover {
+            color: #ffffff;
+        }
+        .language-bar {
+            margin-top: 20px;
+        }
+        .language-bar .progress {
+            height: 20px;
+            background-color: #333;
+        }
+        .language-bar .progress-bar {
+            background-color: #4f4e4e;
+        }
+        .language-bar .progress-bar-container {
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -301,20 +459,89 @@
           <h2>
             <br>
             <b>
-              <a href="" class="typewrite logocontent" data-period="2000"
+              <a href="" class="typewrite " style="color: white;" data-period="2000"
                 data-type='[ "A Web Developer ", "A Web Designer" ]'>
                 <span class="wrap" span>
               </a>
           </h2>
           <br>
-          <button type="button" class="btn btn-light" data-mdb-ripple-init data-mdb-ripple-color="dark"><a
-              href="cv.pdf">Download CV</a></button>
+          <a href="files/cv.pdf" download="cv.pdf"  >
+            <div class="download-button-container">
+            <button id="download-btn" class="download-button">
+                <span id="download-text">Download</span>
+                <span id="download-icon" class="icon">⬇</span>
+            </button>
+        </div>
+        </a>
 
           </b>
         </div>
       </div>
     </section>
 
+    <section class="contact-section blockslider ">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-4 text-center text-md-start">
+                  <img src="images/profile.jpg" alt="Profile Picture" class="profile-img mb-3 mb-md-0">
+              </div>
+              <div class="col-md-8">
+                  <h1 class="text-center text-white text-md-start">Contact Us</h1>
+                  <div class="contact-info">
+                      <h2 class="text-white">Haseeb</h2>
+                      <p><strong>Father's Name:</strong> Iftikhar Ahmed </p>
+                      <p><strong>Phone:</strong> <a href="tel:+923421449801" class="text-decoration-none text-white">+92 (342) 144-9801</a></p>
+                      <p><strong>Address:</strong> Kahuta Rawalpindi</p>
+                      <p><strong>Job Experience:</strong>Teaching, Web development and web designs</p>
+                      <p><strong>Email:</strong> <a href="mailto:haseeb.giit@gmail.com" class="text-decoration-none text-white">haseeb.giit@gmail.com</a></p>
+                  </div>
+                  <!-- Language Bar -->
+                  <div class="language-bar">
+                      <h5>Programming Languages:</h5>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Python</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Java</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Ruby</div>
+                      </div>
+                      <div class="progress progress-bar-container">
+                          <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">TypeScript</div>
+                      </div>
+                  </div>
+                  <!-- Social Media Links -->
+                  <div class="social-media text-center text-md-start mt-4">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-linkedin"></i> LinkedIn
+                      </a>
+                      <a href="https://www.facebook.com/profile.php?id=100029084070525&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-twitter"></i> Facebook
+                      </a>
+                      <a href="https://github.com/haseeb-giit/potfolio" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-github"></i> GitHub
+                      </a>
+                      <a href="https://www.instagram.com/haseeb.giit?igsh=bWZ6aDJwd25ybDht" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-instagram"></i> Instagram
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <!-- About 1 - Bootstrap Brain Component -->
     <section class="py-3 py-md-5 blockslider">
       <div class="container">
@@ -326,7 +553,7 @@
           <div class="col-12 col-lg-6 col-xl-7">
             <div class="row justify-content-xl-center">
               <div class="col-12 col-xl-11">
-                <h1 class="mb-3 logocontent">About</h1>
+                <h1 class="mb-3 text-white">About</h1>
                 <p class="lead fs-4 text-secondary mb-3">"I am a dedicated educator with expertise in teaching Computer
                   Science. My passion extends to web development, where I create dynamic and responsive websites.</p>
                 <p class="mb-5"> Additionally, I specialize in Python programming, focusing on delivering practical,
@@ -344,7 +571,7 @@
                         </svg>
                       </div>
                       <div>
-                        <h2 class="h4 mb-3 logocontent">Development</h2>
+                        <h2 class="h4 mb-3 text-white">Development</h2>
                         <p class="text-secondary mb-0">Building scalable, efficient solutions with clean code for robust
                           and adaptive applications</p>
                       </div>
@@ -361,7 +588,7 @@
                         </svg>
                       </div>
                       <div>
-                        <h2 class="h4 mb-3 logocontent">Design</h2>
+                        <h2 class="h4 mb-3 text-white">Design</h2>
                         <p class="text-secondary mb-0">Crafting intuitive, visually appealing designs that enhance user
                           experience and engagement effortlessly.</p>
                       </div>
@@ -377,47 +604,48 @@
 
 
     <section class="blockslider">
-      <h1 class="logocontent text-center">
+      <h1 class="text-white text-center">
         WORK
       </h1>
       <div class="card-deck padding ">
         <div class="card border_animation">
           <img class="card-img-top" src="images/snake.jpg" alt="Card image cap">
           <div class="card-body " style="background-color: black;">
-            <h2 class="card-title logocontent">Snake Game </h2>
+            <h2 class="card-title text-white">Snake Game </h2>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.</p>
           </div>
           <div class="card-footer border_animation "
             style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0;border-top: none;">
-            <small class="text-muted"><a href="https://haseeb-giit.github.io/Snake/" target="_blank">              <button type="button" class="btn logobg" data-mdb-ripple-init>Click Here To Visit</button>
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Snake/" target="_blank">     
+                       <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
             </a></small>
           </div>
         </div>
         <div class="card border_animation">
           <img class="card-img-top" src="images/tictacteo.jpg" alt="Card image cap">
           <div class="card-body " style="background-color: black;">
-            <h2 class="card-title logocontent">Tic Tac Teo Game </h2>
+            <h2 class="card-title text-white">Tic Tac Teo Game </h2>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.</p>
           </div>
           <div class="card-footer border_animation "
             style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none;">
-            <small class="text-muted"><a href="https://haseeb-giit.github.io/Tic/" target="_blank"><button type="button" class="btn logobg" data-mdb-ripple-init>Click Here To Visit</button></a></small>
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Tic/" target="_blank"><button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button></a></small>
           </div>
         </div>
 
         <div class="card border_animation">
           <img class="card-img-top" src="images/education.jpg" alt="Card image cap">
           <div class="card-body " style="background-color: black;">
-            <h2 class="card-title logocontent">Educational Website </h2>
+            <h2 class="card-title text-white">Educational Website </h2>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.</p>
           </div>
           <div class="card-footer border_animation "
             style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none ;">
             <small class="text-muted"><a href="https://haseeb-giit.github.io/SN-Point/" target="_blank">
-                <button type="button" class="btn logobg" data-mdb-ripple-init>Click Here To Visit</button>
+                <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
               </a>
             </small>
           </div>
@@ -425,6 +653,14 @@
       </div>
     </section>
 
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------->
+
+
+    
 
   </div>
 
@@ -437,6 +673,27 @@
   <script src="js/main.js"></script>
   <script>
 
+const downloadBtn = document.getElementById('download-btn');
+const downloadText = document.getElementById('download-text');
+const downloadIcon = document.getElementById('download-icon');
+
+downloadBtn.addEventListener('click', function() {
+    // Change button text and icon during download
+    downloadText.innerHTML = 'Downloading...';
+    downloadIcon.innerHTML = '⬇';
+    downloadBtn.classList.remove('success');
+
+    // Simulate download with a timeout
+    setTimeout(() => {
+        downloadComplete();
+    }, 3000); // 3 seconds delay to simulate download process
+});
+
+function downloadComplete() {
+    downloadText.innerHTML = 'Downloaded';
+    downloadIcon.innerHTML = '✔';
+    downloadBtn.classList.add('success');
+}
 
 
     var TxtType = function (el, toRotate, period) {

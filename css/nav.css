@@ -11837,7 +11837,7 @@ h5,
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
-    color: #333333;
+    color: white;
     position: relative;
     opacity: 1 !important;
 }
@@ -11935,7 +11935,7 @@ h5,
 }
 
 .social-media p a span {
-    color: #4d4d4d;
+    color: white;
 }
 
 .social-media p a:hover {
