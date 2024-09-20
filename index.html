@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en" id="html" class="bod">
+<html lang="en" id="html" class="bod" style="scroll-behavior: smooth;">
 
 <head>
-  <title>Haseeb Ali|| Potfolios</title>
+  <title>Haseeb Ali || Potfolios</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -136,7 +136,7 @@
       border-radius: 7px;
       animation: mymove 5s infinite;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
-      0 3px 5px rgba(0, 0, 0, 0.1);
+        0 3px 5px rgba(0, 0, 0, 0.1);
     }
 
     @keyframes mymove {
@@ -239,87 +239,89 @@
     }
 
     /* Body for the black background */
-body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-/* Download button container */
-.download-button-container {
-    text-align: center;
-    position: relative;
-}
+    /* Download button container */
+    .download-button-container {
+      text-align: center;
+      position: relative;
+    }
 
-/* Download button styling */
-.download-button {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
+    /* Download button styling */
+    .download-button {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
 
-.download-button:hover {
-    background-color: white;
-    color: black;
-}
+    .download-button:hover {
+      background-color: white;
+      color: black;
+    }
 
-.icon {
-    margin-left: 10px;
-    transition: transform 0.3s ease-in-out;
-}
+    .icon {
+      margin-left: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
 
-.download-button:active .icon {
-    transform: translateY(5px);
-}
+    .download-button:active .icon {
+      transform: translateY(5px);
+    }
 
-/* Success state */
-.download-button.success {
-    background-color: black;
-    color: white;
-}
+    /* Success state */
+    .download-button.success {
+      background-color: black;
+      color: white;
+    }
 
-.download-button.success #download-text {
-    content: "Downloaded";
-    animation: fade-in-out 0.5s forwards;
-}
+    .download-button.success #download-text {
+      content: "Downloaded";
+      animation: fade-in-out 0.5s forwards;
+    }
 
-.download-button.success #download-icon {
-    content: "✔";
-    transform: rotate(0deg);
-    animation: rotate-check 0.5s forwards;
-}
+    .download-button.success #download-icon {
+      content: "✔";
+      transform: rotate(0deg);
+      animation: rotate-check 0.5s forwards;
+    }
 
-/* Fade-in-out effect for download text */
-@keyframes fade-in-out {
-    0% {
+    /* Fade-in-out effect for download text */
+    @keyframes fade-in-out {
+      0% {
         opacity: 0;
-    }
-    100% {
+      }
+
+      100% {
         opacity: 1;
+      }
     }
-}
 
-/* Rotation effect for checkmark */
-@keyframes rotate-check {
-    from {
+    /* Rotation effect for checkmark */
+    @keyframes rotate-check {
+      from {
         transform: rotate(0deg);
-    }
-    to {
+      }
+
+      to {
         transform: rotate(360deg);
+      }
     }
-}
 
 
 
@@ -327,76 +329,78 @@ body {
 
 
 
-.hov{
-  border: 2px solid white;
-  color: white;
-}
-.hov:hover{
-  background-color: white;
-  color: black;
-}
+    .hov {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .hov:hover {
+      background-color: white;
+      color: black;
+    }
 
 
 
+    .contact-section {
+      background-color: black;
+      padding: 60px 0;
+    }
 
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+    }
 
+    .contact-info {
+      margin-top: 20px;
+    }
 
-        .contact-section {
-            background-color: black;
-            padding: 60px 0;
-        }
-        .profile-img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border: 4px solid white;
-            object-fit: cover;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info h4 {
-            margin-bottom: 10px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .social-media {
-            margin-top: 20px;
-        }
-        .social-media a {
-            color: #00c1fc;
-            margin-right: 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .social-media a:hover {
-            color: #ffffff;
-        }
-        .language-bar {
-            margin-top: 20px;
-        }
-        .language-bar .progress {
-            height: 20px;
-            background-color: #333;
-        }
-        .language-bar .progress-bar {
-            background-color: #4f4e4e;
-        }
-        .language-bar .progress-bar-container {
-            margin-bottom: 10px;
-        }
+    .contact-info h4 {
+      margin-bottom: 10px;
+    }
 
+    .contact-info p {
+      margin: 5px 0;
+    }
 
+    .social-media {
+      margin-top: 20px;
+    }
 
+    .social-media a {
+      color: #00c1fc;
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
 
+    .social-media a:hover {
+      color: #ffffff;
+    }
 
+    .language-bar {
+      margin-top: 20px;
+    }
 
+    .language-bar .progress {
+      height: 20px;
+      background-color: #333;
+    }
 
+    .language-bar .progress-bar {
+      background-color: #4f4e4e;
+    }
+
+    .language-bar .progress-bar-container {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 
-<body style="background-color:black" id="body " class="body">
+<body style="background-color:black; " id="body " class="body">
 
 
   <div class="loader" id="loader"></div>
@@ -430,11 +434,11 @@ body {
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto mr-md-3">
-            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+            <li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -443,7 +447,7 @@ body {
 
 
 
-    <section class="container my-5 blockslider">
+    <section class="container my-5 blockslider" id="home">
       <div class="row video-content-section d-flex align-items-center">
         <!-- Left side: Video -->
         <div class="col-lg-6 col-md-12 video-container">
@@ -465,85 +469,82 @@ body {
               </a>
           </h2>
           <br>
-          <a href="files/cvs.pdf" download="cv.pdf"  >
+          <a href="files/cv.pdf" download="cv.pdf">
             <div class="download-button-container">
-            <button id="download-btn" class="download-button">
-                <span id="download-text">Download</span>
+              <button id="download-btn" class="download-button">
+                <span id="download-text">Download CV</span>
                 <span id="download-icon" class="icon">⬇</span>
-            </button>
-        </div>
-        </a>
+              </button>
+            </div>
+          </a>
 
           </b>
         </div>
       </div>
     </section>
 
-    <section class="contact-section blockslider ">
+    <section class="contact-section blockslider " id="contact">
       <div class="container">
-          <div class="row align-items-center">
-              <div class="col-md-4 text-center text-md-start">
-                  <img src="images/profile.jpg" alt="Profile Picture" class="profile-img mb-3 mb-md-0">
-              </div>
-              <div class="col-md-8">
-                  <h1 class="text-center text-white text-md-start">Contact Us</h1>
-                  <div class="contact-info">
-                      <h2 class="text-white">Haseeb</h2>
-                      <p><strong>Father's Name:</strong> Iftikhar Ahmed </p>
-                      <p><strong>Phone:</strong> <a href="tel:+923421449801" class="text-decoration-none text-white">+92 (342) 144-9801</a></p>
-                      <p><strong>Address:</strong> Kahuta Rawalpindi</p>
-                      <p><strong>Job Experience:</strong>Teaching, Web development and web designs</p>
-                      <p><strong>Email:</strong> <a href="mailto:haseeb.giit@gmail.com" class="text-decoration-none text-white">haseeb.giit@gmail.com</a></p>
-                  </div>
-                  <!-- Language Bar -->
-                  <div class="language-bar">
-                      <h5>Programming Languages:</h5>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Python</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Java</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">PHP</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">SQL</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Ruby</div>
-                      </div>
-                      <div class="progress progress-bar-container">
-                          <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">TypeScript</div>
-                      </div>
-                  </div>
-                  <!-- Social Media Links -->
-                  <div class="social-media text-center text-md-start mt-4">
-                      <a href="https://www.linkedin.com/in/haseeb-giit/" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-linkedin"></i> LinkedIn
-                      </a>
-                      <a href="https://www.facebook.com/profile.php?id=100029084070525&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-twitter"></i> Facebook
-                      </a>
-                      <a href="https://github.com/haseeb-giit/potfolio" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-github"></i> GitHub
-                      </a>
-                      <a href="https://www.instagram.com/haseeb.giit?igsh=bWZ6aDJwd25ybDht" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-instagram"></i> Instagram
-                      </a>
-                  </div>
-              </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img mb-3 mb-md-0">
           </div>
+          <div class="col-md-8">
+            <h1 class="text-center text-white text-md-start">Contact Us</h1>
+            <div class="contact-info">
+              <h2 class="text-white">Haseeb</h2>
+              <p><strong>Father's Name:</strong> Iftikhar Ahmed </p>
+              <p><strong>Phone:</strong> <a href="tel:+923421449801" class="text-decoration-none text-white">+92 (342)
+                  144-9801</a></p>
+              <p><strong>Address:</strong> Kahuta Rawalpindi</p>
+              <p><strong>Job Experience:</strong>Teaching, Web development and web designs</p>
+              <p><strong>Email:</strong> <a href="mailto:haseeb.giit@gmail.com"
+                  class="text-decoration-none text-white">haseeb.giit@gmail.com</a></p>
+            </div>
+            <!-- Language Bar -->
+            <div class="language-bar">
+              <h5>Programming Languages:</h5>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">HTML/CSS</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">JavaScript</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">Python</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100">Java</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">PHP</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                  aria-valuemax="100">SQL</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100">Ruby</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0"
+                  aria-valuemax="100">TypeScript</div>
+              </div>
+            </div>
+            <!-- Social Media Links -->
+
+          </div>
+        </div>
       </div>
-  </section>
-    <!-- About 1 - Bootstrap Brain Component -->
-    <section class="py-3 py-md-5 blockslider">
+    </section>
+    <!-- About 1 - Bootstrap Brain Component  -->
+    <section class="py-3 py-md-5 blockslider" id="about">
       <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
           <div class="col-12 col-lg-6 col-xl-5">
@@ -603,7 +604,7 @@ body {
     </section>
 
 
-    <section class="blockslider">
+    <section class="blockslider" id="work">
       <h1 class="text-white text-center">
         WORK
       </h1>
@@ -617,9 +618,9 @@ body {
           </div>
           <div class="card-footer border_animation "
             style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0;border-top: none;">
-            <small class="text-muted"><a href="https://haseeb-giit.github.io/Snake/" target="_blank">     
-                       <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
-            </a></small>
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Snake/" target="_blank">
+                <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
+              </a></small>
           </div>
         </div>
         <div class="card border_animation">
@@ -631,7 +632,8 @@ body {
           </div>
           <div class="card-footer border_animation "
             style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none;">
-            <small class="text-muted"><a href="https://haseeb-giit.github.io/Tic/" target="_blank"><button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button></a></small>
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Tic/" target="_blank"><button type="button"
+                  class="btn hov" data-mdb-ripple-init>Click Here To Visit</button></a></small>
           </div>
         </div>
 
@@ -660,103 +662,125 @@ body {
     <!-- ---------------------------------------------------------------------------------->
 
 
-    
 
-  </div>
-
-
-
-  <!-- END nav -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-
-const downloadBtn = document.getElementById('download-btn');
-const downloadText = document.getElementById('download-text');
-const downloadIcon = document.getElementById('download-icon');
-
-downloadBtn.addEventListener('click', function() {
-    // Change button text and icon during download
-    downloadText.innerHTML = 'Downloading...';
-    downloadIcon.innerHTML = '⬇';
-    downloadBtn.classList.remove('success');
-
-    // Simulate download with a timeout
-    setTimeout(() => {
-        downloadComplete();
-    }, 3000); // 3 seconds delay to simulate download process
-});
-
-function downloadComplete() {
-    downloadText.innerHTML = 'Downloaded';
-    downloadIcon.innerHTML = '✔';
-    downloadBtn.classList.add('success');
-}
+    <footer class="bg-black text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Haseeb. All rights reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://github.com/haseeb-giit/potfolio" target="_blank" class="text-white">GitHub</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="www.linkedin.com/in/haseeb-giit" target="_blank" class="text-white">LinkedIn</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank" class="text-white">Twitter</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/haseeb.giit?igsh=bWZ6aDJwd25ybDht" target="_blank"
+              class="text-white">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/profile.php?id=100029084070525&mibextid=ZbWKwL" target="_blank"
+              class="text-white">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
 
-    var TxtType = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
 
-    TxtType.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
+    <!-- END nav -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
 
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      const downloadBtn = document.getElementById('download-btn');
+      const downloadText = document.getElementById('download-text');
+      const downloadIcon = document.getElementById('download-icon');
+
+      downloadBtn.addEventListener('click', function () {
+        // Change button text and icon during download
+        downloadText.innerHTML = 'Downloading...';
+        downloadIcon.innerHTML = '⬇';
+        downloadBtn.classList.remove('success');
+
+        // Simulate download with a timeout
+        setTimeout(() => {
+          downloadComplete();
+        }, 3000); // 3 seconds delay to simulate download process
+      });
+
+      function downloadComplete() {
+        downloadText.innerHTML = 'Downloaded';
+        downloadIcon.innerHTML = '✔';
+        downloadBtn.classList.add('success');
       }
 
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-      var that = this;
-      var delta = 200 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
+      var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
         this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
+      };
 
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    window.onload = function () {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("view").style.display = "block";
-      document.getElementById("html").classList.remove("bod");
-      //document.getElementById("body").classList.remove("bod");
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-      document.body.appendChild(css);
-    };
-  </script>
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("view").style.display = "block";
+        document.getElementById("html").classList.remove("bod");
+        //document.getElementById("body").classList.remove("bod");
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+      };
+    </script>
 </body>
 
 </html>
