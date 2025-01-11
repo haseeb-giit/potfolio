@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en" id="html" class="bod" style="scroll-behavior: smooth;">
+
+<head>
+  <title>Haseeb Ali || Potfolios</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="videos/download.jpg" type="image/icon type">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+  <style>
+
+#instagram-posts iframe {
+  max-width: 100%;
+  height: 600px; /* Default height for larger screens */
+}
+
+@media (max-width: 768px) {
+  #instagram-posts iframe {
+    height: 500px; /* Smaller height for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  #instagram-posts iframe {
+    height: 400px; /* Smaller height for mobile devices */
+  }
+}
+
+
+    .bod,
+    .body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader {
+      margin: auto;
+      border: 20px solid black;
+      border-radius: 50%;
+      border-top: 20px solid blue;
+      border-bottom: 20px solid blue;
+      border-left: 20px solid red;
+      border-right: 20px solid red;
+      width: 200px;
+      height: 200px;
+      animation: spinner 4s linear infinite;
+
+    }
+
+    @keyframes spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .hover {
+      opacity: 1;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+    }
+
+    .hover:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap'); */
+    .logoname {
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      -webkit-animation: name 1s infinite alternate;
+      /* Added for better browser compatibility */
+      animation: name 1s infinite alternate;
+      animation: glow 1s infinite alternate;
+
+    }
+
+    .logobg {
+      animation: bg 1s infinite alternate;
+      color: white;
+      /* padding: px; */
+      /* width: 100px; */
+      font-size: 20px;
+    }
+
+    @-webkit-keyframes bg {
+      0% {
+        background-color: blue;
+      }
+
+      100% {
+        background-color: red;
+      }
+    }
+
+    .logocontent {
+      animation: name 1s infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f;
+      }
+
+      to {
+        text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00, 0 0 70px #f00;
+      }
+    }
+
+
+    @-webkit-keyframes name {
+      0% {
+        color: blue;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+      /* Fixed max width for the video */
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .border_animation {
+      border: none;
+      border-radius: 7px;
+      animation: mymove 5s infinite;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+        0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes mymove {
+      50% {
+        border-color: rgb(120, 120, 121);
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /* On small screens, stack video and content vertically */
+      .video-content-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .video-container video {
+        max-width: 100%;
+      }
+    }
+
+    @keyframes work {
+      from {
+        opacity: 0;
+        scale: 0.5;
+      }
+
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    .blockslider {
+      animation: work 5s linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+
+    #loader {}
+
+    .padding {
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      /* .padding {
+        padding: 0;
+      } */
+
+      .logoname {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-animation: name 1s infinite alternate;
+        /* Added for better browser compatibility */
+        animation: name 1s infinite alternate;
+      }
+
+      .logocontent {
+        animation: blu 1s infinite alternate;
+      }
+
+      @-webkit-keyframes name {
+        0% {
+          color: blue;
+        }
+
+        100% {
+          color: red;
+        }
+      }
+
+      @-webkit-keyframes blu {
+        0% {
+          color: red;
+        }
+
+        100% {
+          color: blue;
+        }
+      }
+
+      /* On small screens, stack video and content vertically */
+      .video-content-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #loader {}
+
+      .video-container video {
+        max-width: 100%;
+      }
+    }
+
+    #view {
+      display: none;
+    }
+
+    /* Body for the black background */
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Download button container */
+    .download-button-container {
+      text-align: center;
+      position: relative;
+    }
+
+    /* Download button styling */
+    .download-button {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .download-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .icon {
+      margin-left: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .download-button:active .icon {
+      transform: translateY(5px);
+    }
+
+    /* Success state */
+    .download-button.success {
+      background-color: black;
+      color: white;
+    }
+
+    .download-button.success #download-text {
+      content: "Downloaded";
+      animation: fade-in-out 0.5s forwards;
+    }
+
+    .download-button.success #download-icon {
+      content: "✔";
+      transform: rotate(0deg);
+      animation: rotate-check 0.5s forwards;
+    }
+
+    /* Fade-in-out effect for download text */
+    @keyframes fade-in-out {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Rotation effect for checkmark */
+    @keyframes rotate-check {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+
+
+
+
+    .hov {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .hov:hover {
+      background-color: white;
+      color: black;
+    }
+
+
+
+    .contact-section {
+      background-color: black;
+      padding: 60px 0;
+    }
+
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info h4 {
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      color: #00c1fc;
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .social-media a:hover {
+      color: #ffffff;
+    }
+
+    .language-bar {
+      margin-top: 20px;
+    }
+
+    .language-bar .progress {
+      height: 20px;
+      background-color: #333;
+    }
+
+    .language-bar .progress-bar {
+      background-color: #4f4e4e;
+    }
+
+    .language-bar .progress-bar-container {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-color:black; " id="body " class="body">
+
+
+  <div class="loader" id="loader"></div>
+
+
+
+  <div id="view">
+
+
+    <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">HASEEB </a>
+        <div class="social-media order-lg-last">
+          <p class="mb-0 d-flex">
+            <a href="https://web.facebook.com/people/Haseeb-Ali/pfbid02DxneY7XyY1jf3h79tMWQqd31wMnK2g6A8nyWpQzft4xtvHTnVmpCeoS1KyNEzvbAl/"
+              class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i
+                  class="sr-only">Facebook</i></span></a>
+            <a href="https://web.facebook.com/people/Haseeb-Ali/pfbid02DxneY7XyY1jf3h79tMWQqd31wMnK2g6A8nyWpQzft4xtvHTnVmpCeoS1KyNEzvbAl/"
+              class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i
+                  class="sr-only">Twitter</i></span></a>
+            <a href="https://www.instagram.com/haseeb.giit?igsh=bWZ6aDJwd25ybDht"
+              class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
+                  class="sr-only">Instagram</i></span></a>
+            <a href="https://wa.link/9lyse4" class="d-flex align-items-center justify-content-center"><span
+                class="fa fa-whatsapp"><i class="sr-only">Dribbble</i></span></a>
+          </p>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto mr-md-3">
+            <li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+            <!-- <li class="nav-item"><a href="#" class="nav-link">Blog</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section class="container my-5 blockslider" id="home">
+      <div class="row video-content-section d-flex align-items-center">
+        <!-- Left side: Video -->
+        <div class="col-lg-6 col-md-12 video-container">
+          <video muted autoplay loop>
+            <source src="videos/kj.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <!-- Right side: Content -->
+        <div class="col-lg-6 col-md-12 content-container">
+          <h1 class="logoname"><b>Hello I am Haseeb</b></h1>
+
+          <h2>
+            <br>
+            <b>
+              <a href="" class="typewrite " style="color: white;" data-period="2000"
+                data-type='[ "A Web Developer ", "A Web Designer" ]'>
+                <span class="wrap" span>
+              </a>
+          </h2>
+          <br>
+          <a href="files/cvs.pdf" download="cv.pdf">
+            <div class="download-button-container">
+              <button id="download-btn" class="download-button">
+                <span id="download-text">Download CV</span>
+                <span id="download-icon" class="icon">⬇</span>
+              </button>
+            </div>
+          </a>
+
+          </b>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section blockslider " id="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img mb-3 mb-md-0">
+          </div>
+          <div class="col-md-8">
+            <h1 class="text-center text-white text-md-start">Contact Us</h1>
+            <div class="contact-info">
+              <h2 class="text-white">Haseeb</h2>
+              <p><strong>Father's Name:</strong> Iftikhar Ahmed </p>
+              <p><strong>Phone:</strong> <a href="tel:+923421449801" class="text-decoration-none text-white">+92 (342)
+                  144-9801</a></p>
+              <p><strong>Address:</strong> Kahuta Rawalpindi</p>
+              <p><strong>Job Experience:</strong>Teaching, Web development and web designs</p>
+              <p><strong>Email:</strong> <a href="mailto:haseeb.giit@gmail.com"
+                  class="text-decoration-none text-white">haseeb.giit@gmail.com</a></p>
+            </div>
+            <!-- Language Bar -->
+            <div class="language-bar">
+              <h5>Programming Languages:</h5>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">HTML/CSS</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">JavaScript</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">Python</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100">Java</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">PHP</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="65" aria-valuemin="0"
+                  aria-valuemax="100">SQL</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100">Ruby</div>
+              </div>
+              <div class="progress progress-bar-container">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="55" aria-valuemin="0"
+                  aria-valuemax="100">C and C++</div>
+              </div>
+            </div>
+            <!-- Social Media Links -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About 1 - Bootstrap Brain Component  -->
+    <section class="py-3 py-md-5 blockslider" id="about">
+      <div class="container">
+        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+          <div class="col-12 col-lg-6 col-xl-5">
+            <img class="img-fluid rounded hover" loading="lazy" style="border-radius: 10px;" src="videos/profile.jpg"
+              alt="About 1">
+          </div>
+          <div class="col-12 col-lg-6 col-xl-7">
+            <div class="row justify-content-xl-center">
+              <div class="col-12 col-xl-11">
+                <h1 class="mb-3 text-white">About</h1>
+                <p class="lead fs-4 text-secondary mb-3">"I am a dedicated educator with expertise in teaching Computer
+                  Science. My passion extends to web development, where I create dynamic and responsive websites.</p>
+                <p class="mb-5"> Additionally, I specialize in Python programming, focusing on delivering practical,
+                  hands-on learning experiences. I strive to empower learners and clients with innovative solutions and
+                  impactful results.</p>
+                <div class="row gy-4 gy-md-0 gx-xxl-5X">
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex">
+                      <div class="me-4 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                          class="bi bi-tag logocontent" viewBox="0 0 16 16">
+                          <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
+                          <path
+                            d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="h4 mb-3 text-white">Development</h2>
+                        <p class="text-secondary mb-0">Building scalable, efficient solutions with clean code for robust
+                          and adaptive applications</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex">
+                      <div class="me-4 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                          class="bi bi-tag logocontent" viewBox="0 0 16 16">
+                          <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
+                          <path
+                            d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="h4 mb-3 text-white">Design</h2>
+                        <p class="text-secondary mb-0">Crafting intuitive, visually appealing designs that enhance user
+                          experience and engagement effortlessly.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <section class="blockslider" id="work">
+      <h1 class="text-white text-center">
+        WORK
+      </h1>
+      <div class="card-deck padding ">
+        <div class="card border_animation">
+          <img class="card-img-top" src="images/cv.PNG" style="filter: grayscale(1) invert(1);" alt="Card image cap">
+          <div class="card-body " style="background-color: black;">
+            <h2 class="card-title text-white">Resume Generator Tool</h2>
+            <p class="card-text">
+              The CV Creator tool simplifies creating professional resumes, allowing users to input details, select templates, and export polished PDFs instantly.
+            </p>
+          </div>
+          <div class="card-footer border_animation "
+            style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0;border-top: none;">
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Create_CV/" target="_blank">
+                <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
+              </a></small>
+          </div>
+        </div>
+        <div class="card border_animation">
+          <img class="card-img-top" src="images/msg.PNG" style="filter: grayscale(1)" alt="Card image cap">
+          <div class="card-body " style="background-color: black;">
+            <h2 class="card-title text-white">Text Converter</h2>
+            <p class="card-text">
+              The text converter project enables transforming text into different formats, such as uppercase, lowercase, or encoding, with user-friendly and efficient processing.
+
+  
+            </p>
+          </div>
+          <div class="card-footer border_animation "
+            style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none;">
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Message-converter/" target="_blank"><button type="button"
+                  class="btn hov" data-mdb-ripple-init>Click Here To Visit</button></a></small>
+          </div>
+        </div>
+
+    
+
+<!-- adding elemement  -->
+        </div>
+     
+
+
+   
+     
+    </section>
+
+
+    <section class="" id="work" style="padding-top: 0; margin-top: 0;">
+      <div class="card-deck padding ">
+        <div class="card border_animation">
+          <img class="card-img-top" src="images/snake.jpg" alt="Card image cap">
+          <div class="card-body " style="background-color: black;">
+            <h2 class="card-title text-white">Snake Game </h2>
+            <p class="card-text">The snake game project involves designing a classic arcade-style game where players guide a growing snake without colliding with obstacles.
+
+            </p>
+          </div>
+          <div class="card-footer border_animation "
+            style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0;border-top: none;">
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Snake/" target="_blank">
+                <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
+              </a></small>
+          </div>
+        </div>
+        <div class="card border_animation">
+          <img class="card-img-top" src="images/tictacteo.jpg" alt="Card image cap">
+          <div class="card-body " style="background-color: black;">
+            <h2 class="card-title text-white">Tic Tac Teo Game </h2>
+            <p class="card-text">The Tic Tac Toe game project develops a fun, interactive game for two players with responsive design and smart computer opponent logic.</p>
+          </div>
+          <div class="card-footer border_animation "
+            style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none;">
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/Tic/" target="_blank"><button type="button"
+                  class="btn hov" data-mdb-ripple-init>Click Here To Visit</button></a></small>
+          </div>
+        </div>
+
+        <div class="card border_animation">
+          <img class="card-img-top" src="images/education.jpg" alt="Card image cap">
+          <div class="card-body " style="background-color: black;">
+            <h2 class="card-title text-white">Educational Website </h2>
+            <p class="card-text">The educational website game project integrates learning games into a platform, enhancing user engagement and simplifying complex concepts through interactive challenges.</p>
+          </div>
+          <div class="card-footer border_animation "
+            style="background-color: black; border-bottom: none; border-left: none; border-right: none;border-radius: 0; border-top: none ;">
+            <small class="text-muted"><a href="https://haseeb-giit.github.io/SN-Point/" target="_blank">
+                <button type="button" class="btn hov" data-mdb-ripple-init>Click Here To Visit</button>
+              </a>
+            </small>
+          </div>
+        </div>
+
+<!-- adding elemement  -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------->
+
+
+
+    <footer class="bg-black text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Haseeb. All rights reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://github.com/haseeb-giit/potfolio" target="_blank" class="text-white">GitHub</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="www.linkedin.com/in/haseeb-giit" target="_blank" class="text-white">LinkedIn</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank" class="text-white">Twitter</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/haseeb.giit?igsh=bWZ6aDJwd25ybDht" target="_blank"
+              class="text-white">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/profile.php?id=100029084070525&mibextid=ZbWKwL" target="_blank"
+              class="text-white">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- END nav -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+      const downloadBtn = document.getElementById('download-btn');
+      const downloadText = document.getElementById('download-text');
+      const downloadIcon = document.getElementById('download-icon');
+
+      downloadBtn.addEventListener('click', function () {
+        // Change button text and icon during download
+        downloadText.innerHTML = 'Downloading...';
+        downloadIcon.innerHTML = '⬇';
+        downloadBtn.classList.remove('success');
+
+        // Simulate download with a timeout
+        setTimeout(() => {
+          downloadComplete();
+        }, 3000); // 3 seconds delay to simulate download process
+      });
+
+      function downloadComplete() {
+        downloadText.innerHTML = 'Downloaded';
+        downloadIcon.innerHTML = '✔';
+        downloadBtn.classList.add('success');
+      }
+
+
+      var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("view").style.display = "block";
+        document.getElementById("html").classList.remove("bod");
+        //document.getElementById("body").classList.remove("bod");
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+      };
+    </script>
+</body>
+
+</html>
